@@ -32,7 +32,7 @@ setTimeout(() => {
           rounded-full
         "
       >
-      <div class="absolute right-0 -top-7 font-bold text-red-500">{{plusPercent}}%</div>
+      <div class="absolute -right-2 -top-7 font-bold text-red-500">{{plusPercent}}%</div>
       </div>
     </div>
   </div>

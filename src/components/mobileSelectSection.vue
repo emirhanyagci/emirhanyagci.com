@@ -8,8 +8,8 @@ function changeSection(section:string){
 </script>
 
 <template>
-    <div class="text-white flex justify-end items-center w-[100px] sm:w-full sm:justify-center sm:my-7" >
-        <div class="bg-[#1D1933] space-y-5 px-3 py-10 rounded-xl z-[9999999] sm:flex sm:p-5 sm:space-y-0 sm:space-x-5">
+    <div class="text-white flex justify-end items-center w-[100px]">
+        <div class="bg-[#1D1933] space-y-5 px-3 py-10 rounded-xl z-[9999999]">
             <div class="sectionBtn" @click="changeSection('about')"><img src="../assets/home.png" alt="" class="w-[18px]"></div>
             <div class="sectionBtn" @click="changeSection('expert')"><img src="../assets/cv.png" alt=""></div>
             <div class="sectionBtn" @click="changeSection('blog')"><img src="../assets/writing.png" alt=""></div>

@@ -3,9 +3,9 @@ import {} from "vue";
 </script>
 
 <template>
-  <div class="flex flex-col px-5">
+  <div class="scrollSettings h-full w-full flex flex-col py-24 px-10 sm:px-8">
     <span class="text-[#fca61f] text-6xl font-medium">Hello 👋, I Am</span>
-    <span class="text-7xl font-bold mb-10">Emirhan Yagci</span>
+    <span class="text-7xl font-bold mb-10 sm:text-5xl">Emirhan Yagci</span>
     <span class="w-[80%] mb-10 text-lg border-l-2 border-[#fca61f] pl-4 "
       >I’m curious to new technologies and a disciplined and passionate software
       devoloper who enjoys solving problems and strives with algorithms ,
@@ -20,6 +20,7 @@ import {} from "vue";
 </template>
 
 <style scoped>
+
 .sectionBtn {
   background: linear-gradient(rgb(41, 38, 73) 0%, rgba(19, 17, 41, 0) 100%);
   box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
