@@ -6,7 +6,6 @@ import router from "./router.js"
 //****************COMPOENNTS********************
 import selectSection from "./components/selectSection.vue"
 import sectionContainer from "./components/sectionContainer.vue"
-import skillPercent from "./components/skillPercent.vue";
 
 
 const app = createApp(App);

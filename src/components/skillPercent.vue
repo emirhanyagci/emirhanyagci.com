@@ -2,7 +2,7 @@
 import { defineProps, ref, onMounted } from "vue";
 const props = defineProps(["name", "percent"]);
 const virtualPercent = ref(0);
-    const plusPercent = ref(0);
+const plusPercent = ref(0);
 
 const upPercent = setInterval(()=>{
     plusPercent.value++
