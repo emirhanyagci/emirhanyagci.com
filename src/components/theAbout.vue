@@ -3,7 +3,7 @@ import {} from "vue";
 </script>
 
 <template>
-  <div class="scrollSettings h-full w-full flex flex-col py-24 px-10 sm:px-8">
+  <div class="scrollSettings h-full w-full flex  flex-col justify-center py-14 px-10 sm:px-8 sm:justify-start">
     <span class="text-[#fca61f] text-6xl font-medium">Hello 👋, I Am</span>
     <span class="text-7xl font-bold mb-10 sm:text-5xl">Emirhan Yagci</span>
     <span class="w-[80%] mb-10 text-lg border-l-2 border-[#fca61f] pl-4 "
