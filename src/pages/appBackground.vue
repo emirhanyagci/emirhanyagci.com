@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted} from "vue"
 
 onMounted(()=>{
@@ -8,17 +8,17 @@ const STAR_MIN_SCALE = 0.2;
 const OVERFLOW_THRESHOLD = 50;
 const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 8;
 
-const canvas = document.querySelector( 'canvas' ),
+const canvas:any = document.querySelector( 'canvas' ),
       context = canvas.getContext( '2d' );
 
-let scale = 1, // device pixel ratio
-    width,
-    height;
+let scale:number = 1, // device pixel ratio
+    width:number,
+    height:number;
 
-let stars = [];
+let stars:any[] = [];
 
-let pointerX,
-    pointerY;
+let pointerX:any,
+    pointerY:any;
 
 let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
 
@@ -46,14 +46,14 @@ function generate() {
 
 }
 
-function placeStar( star ) {
+function placeStar( star:any ) {
 
   star.x = Math.random() * width;
   star.y = Math.random() * height;
 
 }
 
-function recycleStar( star ) {
+function recycleStar( star:any ) {
 
   let direction = 'z';
 
@@ -137,7 +137,7 @@ function update() {
   velocity.x += ( velocity.tx - velocity.x ) * 0.8;
   velocity.y += ( velocity.ty - velocity.y ) * 0.8;
 
-  stars.forEach( ( star ) => {
+  stars.forEach( ( star:any ) => {
 
     star.x += velocity.x * star.z;
     star.y += velocity.y * star.z;
@@ -183,7 +183,7 @@ function render() {
 
 }
 
-function movePointer( x, y ) {
+function movePointer( x:any, y:any ) {
 
   if( typeof pointerX === 'number' && typeof pointerY === 'number' ) {
 
@@ -200,7 +200,7 @@ function movePointer( x, y ) {
 
 }
 
-function onMouseMove( event ) {
+function onMouseMove( event:any ) {
 
   touchInput = false;
 
@@ -208,11 +208,11 @@ function onMouseMove( event ) {
 
 }
 
-function onTouchMove( event ) {
+function onTouchMove( event:any ) {
 
   touchInput = true;
 
-  movePointer( event.touches[0].clientX, event.touches[0].clientY, true );
+  movePointer( event.touches[0].clientX, event.touches[0].clientY );
 
   event.preventDefault();
 
