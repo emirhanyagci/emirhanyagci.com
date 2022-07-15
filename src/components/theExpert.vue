@@ -55,8 +55,8 @@ import skillPercent from "./skillPercent.vue";
     <div class="flex mb-5  md:flex-col md:items-center md:space-y-9">
       <div class="w-1/2 px-5 h-full space-y-10 md:w-full">
         <skill-percent name="Javascript" percent="80"></skill-percent>
-        <skill-percent name="Typescript" percent="60"></skill-percent>
         <skill-percent name="Vue.js" percent="75"></skill-percent>
+        <skill-percent name="Web3.js" percent="80"></skill-percent>
         <skill-percent name="HTML" percent="95"></skill-percent>
       </div>
       <div class="w-1/2 px-5 space-y-10 md:w-full">

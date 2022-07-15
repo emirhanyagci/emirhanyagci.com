@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "autoprefixer": "^10.4.7",
+    "emailjs": "^4.0.0",
+    "mosha-vue-toastify": "^1.0.23",
     "pinia": "^2.0.16",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6",

@@ -7,7 +7,7 @@ import appBackground from "./pages/appBackground.vue";
   <div>
     <app-background></app-background>
   </div>
-  <div class="flex h-[100vh] sm:flex-col">
+  <div class="flex h-[100vh] sm:flex-col sm:pb-10">
     <!-- <mobile-select></mobile-select> -->
     <select-section></select-section>
     <section-container class="w-[90%] sm:w-full" ></section-container>
