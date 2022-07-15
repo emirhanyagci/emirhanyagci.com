@@ -57,11 +57,11 @@ function changeMaxLength(event:any){
     </div>
     <form action="" class="text-gray-300 w-full space-y-5">
       <div class="flex space-x-6 px-5 sm:flex-col sm:space-x-0 sm:space-y-5">
-        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Name" v-model="u_Name"/>
-        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Email" v-model="u_Mail"/>
+        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Name" maxlength="30" v-model="u_Name"/>
+        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Email" maxlength="50" v-model="u_Mail"/>
       </div>
       <div class="px-5">
-        <input class="rounded-full w-full" type="text" placeholder="Subject" v-model="u_Subject"/>
+        <input class="rounded-full w-full" type="text" placeholder="Subject"  maxlength="150" v-model="u_Subject"/>
       </div>
       <div class="px-5 relative">
         <textarea
