@@ -21,8 +21,8 @@ const props:any = {
   subject:u_Subject.value,
   message:u_Message.value
 }
-emailjs.init('YOU"R PUBLİC KEY');
-emailjs.send('SERVICEID', 'TEMPALTEID', props)
+emailjs.init('NhVa1hgVf55AJ0D7F');
+emailjs.send('service_jof6d5b', 'template_kkkz4ue', props)
 .then((res)=>{
   createToast({ title: 'Successful', description: "You'r message succesfully sent"},{
     type:'success',
