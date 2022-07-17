@@ -45,8 +45,8 @@ import skillPercent from "./skillPercent.vue";
           <h1 class="font-semibold text-xl">Web3 Development</h1>
 
           <p class="text-[#a09cbb]">
-            I love Interaction with Smart Contract and I love made DApp using
-            Web3.js and Ethers.js
+            
+            I love to Interact with Smart Contracts and coding DApps using Web3.js and Ethers.js
           </p>
         </div>
       </div>
