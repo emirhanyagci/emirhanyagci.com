@@ -13,8 +13,15 @@ const u_Message= ref("");
 
 
 function sendMessage(){
-  console.log(u_Name.value);
-  
+event?.preventDefault()
+if(localStorage.getItem("isSent") == "true"){
+   createToast({ title: 'Unsuccessful', description: "You've already sent a message, wait a few minutes"},{
+    type:'warning',
+    position:'bottom-left',
+    showIcon:true
+  })
+}else if(u_Name.value.trim().length > 0 && u_Mail.value.trim().length > 0 && u_Subject.value.trim().length > 0 && u_Message.value.trim().length > 0){
+  u_Name.value = u_Mail.value = u_Subject.value = u_Message.value = "";
 const props:any = {
   name:u_Name.value,
   gmail:u_Mail.value,
@@ -24,20 +31,33 @@ const props:any = {
 emailjs.init('NhVa1hgVf55AJ0D7F');
 emailjs.send('service_jof6d5b', 'template_kkkz4ue', props)
 .then((res)=>{
-  createToast({ title: 'Successful', description: "You'r message succesfully sent"},{
+  localStorage.setItem("isSent","true")
+  setTimeout(()=>{
+    localStorage.setItem("isSent","false")
+  },180000)
+  createToast({ title: 'Successful', description: "Your message succesfully sent"},{
     type:'success',
     position:'bottom-left',
     showIcon:true
   })
 })
 .catch(()=>{
-   createToast({ title: 'Unsuccessful', description: "You'r send request failed"},{
+   createToast({ title: 'Unsuccessful', description: "Your request failed"},{
     type:'warning',
     position:'bottom-left',
     showIcon:true
   })
 })
+}else{
+  createToast({ title: 'warning', description: "There is unfilled areas"},{
+    type:'warning',
+    position:'bottom-left',
+    showIcon:true
+  })
 }
+}
+
+
 function changeMaxLength(event:any){
    messageCount.value =  event.target.value.length
   
@@ -55,13 +75,14 @@ function changeMaxLength(event:any){
       </div>
       <div></div>
     </div>
-    <form action="" class="text-gray-300 w-full space-y-5">
+    <form         @submit="sendMessage"
+ action="" class="text-gray-300 w-full space-y-5">
       <div class="flex space-x-6 px-5 sm:flex-col sm:space-x-0 sm:space-y-5">
-        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Name" maxlength="30" v-model="u_Name"/>
-        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Email" maxlength="50" v-model="u_Mail"/>
+        <input class="w-1/2 rounded-full sm:w-full" type="text" placeholder="Name" minlength="1" maxlength="30" v-model="u_Name" required/>
+        <input class="w-1/2 rounded-full sm:w-full" type="email" placeholder="Email" maxlength="50" v-model="u_Mail" required/>
       </div>
       <div class="px-5">
-        <input class="rounded-full w-full" type="text" placeholder="Subject"  maxlength="150" v-model="u_Subject"/>
+        <input class="rounded-full w-full" type="text" placeholder="Subject" minlength="2"  maxlength="150" v-model="u_Subject" required/>
       </div>
       <div class="px-5 relative">
         <textarea
@@ -74,14 +95,13 @@ function changeMaxLength(event:any){
           maxlength="1000"
           @input="changeMaxLength"
           v-model="u_Message"
+          required
         ></textarea>
         <div class="absolute right-8 bottom-4 text-gray-500">{{messageCount}}/1000</div>
       </div>
       <div class="px-5 flex justify-center">
     
         <button
-        @click="sendMessage"
-          type="button"        
           class="
             submitBtn
             bg-[#fca61f]

@@ -9,7 +9,7 @@ function changeSection(section:string){
 </script>
 
 <template>
-    <div class="text-white flex justify-end items-center w-[100px] sm:w-full sm:justify-center sm:my-7" >
+    <div class="text-white flex justify-end items-center w-[140px] sm:w-full sm:justify-center sm:my-7" >
         <div class="bg-[#1D1933] px-3 py-10 rounded-xl z-[10] sm:p-5 sm:flex 2sm:flex-col" >
             <div class="space-y-4 2sm:flex sm:flex sm:space-y-0 sm:space-x-5">
                 <div title="About" class="sectionBtn" @click="changeSection('about')"><img src="../assets/home.png" alt="" class="w-[18px]"></div>
@@ -17,7 +17,7 @@ function changeSection(section:string){
                 <div title="Blog" class="sectionBtn" @click="changeSection('blog')"><img src="../assets/writing.png" alt=""></div>
                 <div title="Contact" class="sectionBtn" @click="changeSection('contact')"><img src="../assets/at.png" alt="" class="w-[17px]"></div>
             </div>
-            <div class="border-b-2 rounded-full border-red-500 my-3  sm:border-r-2 sm:my-0 sm:mx-3 sm:border-b-0 2sm:space-y-0 2sm:border-r-0 2sm:sm:border-b-2 2sm:my-3"></div>
+            <div class="border-b-2 rounded-full border-red-500 my-3  sm:border-r-2 sm:my-0 sm:mx-3 sm:border-b-0 2sm:space-y-0 2sm:border-r-0 2sm:sm:border-b-2 2sm:my-3 2sm:mx-0"></div>
             <div class=" space-y-4 justify-center sm:flex sm:space-y-0 sm:space-x-5">
                 <a href="https://github.com/emirhan-yagci?tab=repositories" class="sectionBtn" target="_blank "><img src="../assets/github.png" alt="" class="w-[20px]"></a>
                 <a href="https://www.linkedin.com/in/emirhan-yagci/" class="sectionBtn" target="_blank"><img src="../assets/linkedin.png" alt="" class="w-[17px]"></a>
