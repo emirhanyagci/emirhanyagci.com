@@ -2,7 +2,6 @@
 import { defineProps,ref } from "vue";
 const props:any =defineProps(["url","text",])
 
-const Imgurl = ref(`/src/assets/${props.url}`)
 </script>
 
 <template>
@@ -10,7 +9,7 @@ const Imgurl = ref(`/src/assets/${props.url}`)
           class="flex items-center cursor-pointer sm:flex-col sm:space-y-2"
         >
           <button :title="text" class="sectionBtn">
-            <img :src="Imgurl" alt="" class="w-[17px] h-[17px]" />
+            <img :src="url" alt="" class="w-[17px] h-[17px]" />
           </button>
           <span class="hiddenText w-full text-center">{{text}}</span>
         </div>
