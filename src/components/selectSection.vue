@@ -34,7 +34,9 @@ function changeSection(section: string) {
         py-3
         rounded-xl
         z-[10]
-        md:p-5 md:flex
+        md:py-5 
+        md:px-3
+        md:flex
         2sm:flex-col
       "
     >
