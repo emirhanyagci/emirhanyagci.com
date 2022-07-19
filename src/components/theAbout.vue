@@ -6,8 +6,8 @@ console.log(1);
 
 <template>
   <div class="animate__bounceInRight scrollSettings h-full w-full flex  flex-col justify-center py-20 px-10 sm:px-8 sm:justify-start sm:py-20">
-    <span class=" text-[#fca61f] text-6xl font-medium">Hello 👋, I Am</span>
-    <span class="text-7xl font-bold mb-10 sm:text-5xl">Emirhan Yagci</span>
+    <span class=" text-[#fca61f] text-6xl font-medium md:text-6xl sm:text-5xl">Hello 👋, I Am</span>
+    <span class="text-7xl font-bold mb-10 sm:text-4xl md:text-5xl sm:">Emirhan Yagci</span>
     <span class="w-[80%] mb-10 text-lg border-l-2 border-[#fca61f] pl-4 "
       >I’m curious to new technologies and a disciplined and passionate software
       devoloper who enjoys solving problems and strives with algorithms ,
