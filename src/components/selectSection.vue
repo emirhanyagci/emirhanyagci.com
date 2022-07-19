@@ -20,11 +20,10 @@ function changeSection(section: string) {
       justify-center
       items-center
       w-[250px]
-      md:justify-start
-      md:py-56
-      sm:items-center sm:py-0 sm:w-full sm:justify-center sm:my-7
-      pl-10
-      sm:pl-0
+     pl-10
+      md:items-center md:py-0 md:w-full md:justify-center md:my-7
+      
+      md:pl-0
     "
   >
     <div
@@ -35,11 +34,11 @@ function changeSection(section: string) {
         py-3
         rounded-xl
         z-[10]
-        sm:p-5 sm:flex
+        md:p-5 md:flex
         2sm:flex-col
       "
     >
-      <div class="space-y-4 2sm:flex sm:flex sm:space-y-0 sm:space-x-5">
+      <div class="space-y-4 2sm:flex md:flex md:space-y-0 md:space-x-5">
         <selectAreaBtn
           @click="changeSection('about')"
           text="About me"

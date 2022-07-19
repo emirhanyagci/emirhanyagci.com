@@ -6,7 +6,7 @@ const props:any =defineProps(["url","text",])
 
 <template>
      <div
-          class="flex items-center cursor-pointer sm:flex-col sm:space-y-2"
+          class="flex items-center cursor-pointer md:flex-col md:space-y-2"
         >
           <button :title="text" class="sectionBtn">
             <img :src="url" alt="" class="w-[17px] h-[17px]" />
@@ -17,7 +17,7 @@ const props:any =defineProps(["url","text",])
 
 <style scoped>
 .hiddenText {
-  @apply inline-block opacity-50 max-w-0 whitespace-nowrap transition-all duration-300 overflow-hidden h-full sm:max-w-sm sm:opacity-100  sm:!border-l-0 sm:!ml-0 sm:border-t-2 border-[#fca61f] sm:pt-2 sm:!pl-0;
+  @apply inline-block opacity-50 max-w-0 whitespace-nowrap transition-all duration-300 overflow-hidden h-full border-[#fca61f] md:max-w-sm md:opacity-100  md:!border-l-0 md:!ml-0 md:border-t-2  md:pt-2 md:!pl-0;
 }
 .selectContainer:hover .hiddenText {
   @apply max-w-sm opacity-100 ml-3  border-l-2 border-[#fca61f] pl-2;

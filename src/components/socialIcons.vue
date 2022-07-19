@@ -4,7 +4,7 @@ import { ref } from "vue";
 
 <template>
   <section class="bg-[#1D1933] selectContainer px-3 py-2 my-2 rounded-xl z-[10]">
-    <div class="justify-center sm:flex space-y-3 flex flex-col items-center sm:flex-row sm:space-y-0 sm:space-x-3">
+    <div class="justify-center space-y-3 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-3 md:flex ">
       <a
         href="https://github.com/emirhan-yagci?tab=repositories"
         class="flex items-center w-full"
