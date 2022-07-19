@@ -35,7 +35,7 @@ function changeSection(section: string) {
         rounded-xl
         z-[10]
         md:py-5 
-        md:px-3
+        md:px-4
         md:flex
         2sm:flex-col
       "
@@ -43,7 +43,7 @@ function changeSection(section: string) {
       <div class="space-y-4 2sm:flex md:flex md:space-y-0 md:space-x-5">
         <selectAreaBtn
           @click="changeSection('about')"
-          text="About me"
+          text="About"
           url="https://cdn.discordapp.com/attachments/529558352213311507/998934025722933261/user.png"
         ></selectAreaBtn>
 
