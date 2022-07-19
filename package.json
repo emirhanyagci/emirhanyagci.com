@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.7",
     "emailjs": "^4.0.0",
     "mosha-vue-toastify": "^1.0.23",

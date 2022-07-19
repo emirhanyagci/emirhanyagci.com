@@ -31,7 +31,6 @@ function sendMessage() {
     u_Subject.value.trim().length > 0 &&
     u_Message.value.trim().length > 0
   ) {
-    u_Name.value = u_Mail.value = u_Subject.value = u_Message.value = "";
     const props: any = {
       name: u_Name.value,
       gmail: u_Mail.value,
@@ -42,6 +41,7 @@ function sendMessage() {
     emailjs
       .send("service_jof6d5b", "template_kkkz4ue", props)
       .then((res) => {
+        u_Name.value = u_Mail.value = u_Subject.value = u_Message.value = "";
         localStorage.setItem("isSent", "true");
         setTimeout(() => {
           localStorage.setItem("isSent", "false");
@@ -83,7 +83,7 @@ function changeMaxLength(event: any) {
 </script>
 
 <template>
-  <section class="scrollSettings h-full w-full space-y-8 pt-12 pb-10">
+  <section class="animate__fadeIn scrollSettings h-full w-full space-y-8 pt-12 pb-10">
     <div class="space-y-2">
       <div class="text-[#fca61f] font-bold text-center text-3xl">
         Get in Touch
@@ -168,6 +168,9 @@ function changeMaxLength(event: any) {
 </template>
 
 <style scoped>
+.animate__fadeIn{
+  animation-duration:1.2s;
+}
 .sectionBtn {
   background: linear-gradient(rgb(41, 38, 73) 0%, rgba(19, 17, 41, 0) 100%);
   box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;

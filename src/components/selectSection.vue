@@ -1,39 +1,73 @@
 <script setup lang="ts">
-import {ref} from "vue"
-import {useRouter} from "vue-router"
-const router = useRouter()
-function changeSection(section:string){
-    router.push(section)
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import socialIcons from "./socialIcons.vue";
+import selectAreaBtn from "./selectAreaBtn.vue";
+const selectInfo: any = ref(null);
+const router = useRouter();
+function changeSection(section: string) {
+  router.push(section);
 }
-
 </script>
 
 <template>
-    <div class="text-white flex justify-end items-center w-[140px] sm:w-full sm:justify-center sm:my-7" >
-        <div class="bg-[#1D1933] px-3 py-10 rounded-xl z-[10] sm:p-5 sm:flex 2sm:flex-col" >
-            <div class="space-y-4 2sm:flex sm:flex sm:space-y-0 sm:space-x-5">
-                <div title="About" class="sectionBtn" @click="changeSection('about')"><img src="../assets/home.png" alt="" class="w-[18px]"></div>
-                <div title="Skills" class="sectionBtn" @click="changeSection('expert')"><img src="../assets/cv.png" alt=""></div>
-                <div title="Blog" class="sectionBtn" @click="changeSection('blog')"><img src="../assets/writing.png" alt=""></div>
-                <div title="Contact" class="sectionBtn" @click="changeSection('contact')"><img src="../assets/at.png" alt="" class="w-[17px]"></div>
-            </div>
-            <div class="border-b-2 rounded-full border-red-500 my-3  sm:border-r-2 sm:my-0 sm:mx-3 sm:border-b-0 2sm:space-y-0 2sm:border-r-0 2sm:sm:border-b-2 2sm:my-3 2sm:mx-0"></div>
-            <div class=" space-y-4 justify-center sm:flex sm:space-y-0 sm:space-x-5">
-                <a href="https://github.com/emirhan-yagci?tab=repositories" class="sectionBtn" target="_blank "><img src="../assets/github.png" alt="" class="w-[20px]"></a>
-                <a href="https://www.linkedin.com/in/emirhan-yagci/" class="sectionBtn" target="_blank"><img src="../assets/linkedin.png" alt="" class="w-[17px]"></a>
-            </div>
-        </div>
+  <div
+    class="
+      animate__backInLeft
+      
+      text-white
+      flex
+      flex-col
+      justify-center
+      items-center
+      w-[250px]
+      md:items-start 
+      md:py-56
+      sm:items-center
+      sm:py-0
+      sm:w-full sm:justify-center sm:my-7
+      pl-10
+      sm:pl-0
+    "
+  >
+    <div
+      class="
+      selectContainer
+        bg-[#1D1933]
+        px-3
+        py-3
+        rounded-xl
+        z-[10]
+        sm:p-5 sm:flex
+        2sm:flex-col
+       
+      "
+    >
+      <div class="space-y-4 2sm:flex sm:flex sm:space-y-0 sm:space-x-5">
+      
+                    <selectAreaBtn @click="changeSection('about')"  text="About me" url="user.png"></selectAreaBtn>
+
+               <selectAreaBtn  @click="changeSection('skill')" text="Skills" url="cv.png"></selectAreaBtn>
+
+          <selectAreaBtn @click="changeSection('blog')" text="Blog" url="writing.png"></selectAreaBtn>
+
+
+        <selectAreaBtn @click="changeSection('contact')" text="Contact" url="at.png"></selectAreaBtn>
+      </div>
     </div>
+          <social-icons></social-icons>
+
+  </div>
 </template>
 
 <style scoped>
-.sectionBtn{
-    background: linear-gradient(rgb(41, 38, 73) 0%, rgba(19, 17, 41, 0) 100%);
-    box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
-    border-radius: 9px;
-    border: 1px solid #2A2547;
-    width: 50px;
-    height: 50px;
-    @apply w-[50px] h-[50px] transition-all duration-300 flex justify-center items-center cursor-pointer hover:bg-[#131129]
+.selectBtnWrap{
+  
 }
+
+.animate__backInLeft {
+  animation-duration: 1s;
+}
+
+
 </style>

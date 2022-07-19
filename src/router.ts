@@ -7,7 +7,7 @@ import theContact from "./components/theContact.vue"
 const routes:any = [
     {path:"/",redirect:"/about"},
     {path:"/about",component:theAbout},
-    {path:"/expert",component:theExpert},
+    {path:"/skill",component:theExpert},
     {path:"/blog",component:theBlog},
     {path:"/contact",component:theContact},
 

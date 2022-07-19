@@ -5,9 +5,9 @@ import skillPercent from "./skillPercent.vue";
 </script>
 
 <template>
-  <div class="scrollSettings h-full w-full px-5 py-5 flex flex-col justify-between">
+  <div class=" animate__fadeIn scrollSettings h-full w-full px-5 py-5 flex flex-col justify-between">
     <div class="flex space-x-5 mb-5 md:flex-col md:space-x-0 ">
-      <div class=" expert-box h-full w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col lg:items-center md:flex-row mb-4 md:w-full 2sm:flex-col" >
+      <div class=" expert-box w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col lg:items-center md:mb-4 md:flex-row md:w-full 2sm:flex-col" >
         <figure class="mb-0 flex items-center">
           <span class="bg-[#2a2645] p-6 rounded-full">
             <img
@@ -90,6 +90,9 @@ import skillPercent from "./skillPercent.vue";
 </template>
 
 <style scoped>
+.animate__fadeIn {
+  animation-duration: 1.2s;
+}
 .expert-box {
   @apply bg-[#211e39] border-[1px] border-transparent px-[18px] py-8 rounded-xl transition-all duration-300 ease-out hover:border-[#fca61f] lg:py-4;
 }

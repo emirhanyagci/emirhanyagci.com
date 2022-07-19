@@ -3,9 +3,10 @@ import './style.css'
 import App from './App.vue'
 
 import router from "./router.js"
+
+import "/node_modules/animate.css/animate.css"
 //****************COMPOENNTS********************
 import selectSection from "./components/selectSection.vue"
-
 import sectionContainer from "./components/sectionContainer.vue"
 
 
