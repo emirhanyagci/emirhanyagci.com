@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import {} from "vue";
 import skillPercent from "./skillPercent.vue";
-
 </script>
 
 <template>
-  <div class=" animate__fadeIn scrollSettings h-full w-full px-5 py-5 flex flex-col justify-between">
-    <div class="flex space-x-5 mb-5 md:flex-col md:space-x-0 ">
-      <div class=" expert-box w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col lg:items-center md:mb-4 md:flex-row md:w-full 2sm:flex-col" >
+  <div
+    class="animate__fadeIn scrollSettings h-full w-full px-5 py-5 flex flex-col justify-between"
+  >
+    <div class="flex space-x-5 mb-5 md:flex-col md:space-x-0">
+      <div
+        class="expert-box w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col lg:items-center md:mb-4 md:flex-row md:w-full 2sm:flex-col"
+      >
         <figure class="mb-0 flex items-center">
           <span class="bg-[#2a2645] p-6 rounded-full">
             <img
@@ -29,7 +32,9 @@ import skillPercent from "./skillPercent.vue";
         </div>
       </div>
 
-      <div class="expert-box h-full w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col  lg:items-center md:w-full md:flex-row 2sm:flex-col" >
+      <div
+        class="expert-box h-full w-1/2 flex space-x-3 lg:space-y-1 lg:flex-col lg:items-center md:w-full md:flex-row 2sm:flex-col"
+      >
         <figure class="mb-0 flex items-center">
           <span class="bg-[#2a2645] p-6 rounded-full">
             <img
@@ -45,24 +50,28 @@ import skillPercent from "./skillPercent.vue";
           <h1 class="font-semibold text-xl">Web3 Development</h1>
 
           <p class="text-[#a09cbb]">
-            
-            I love to Interact with Smart Contracts and coding DApps using Web3.js and Ethers.js
+            I love to Interact with Smart Contracts and coding DApps using
+            Web3.js and Ethers.js
           </p>
         </div>
       </div>
     </div>
     <!--skill percent-->
-    <div class="flex mb-5  md:flex-col md:items-center md:space-y-9">
+    <div class="flex mb-5 md:flex-col md:items-center md:space-y-9">
       <div class="w-1/2 px-5 h-full space-y-10 md:w-full">
-        <skill-percent name="Javascript" percent="80"></skill-percent>
-        <skill-percent name="Vue.js" percent="75"></skill-percent>
-        <skill-percent name="Web3.js" percent="80"></skill-percent>
-        <skill-percent name="HTML" percent="95"></skill-percent>
+        <skill-percent
+          name="Javascript/Typescript"
+          percent="85"
+        ></skill-percent>
+        <skill-percent name="Vue.js" percent="85"></skill-percent>
+        <skill-percent name="Web3.js/Ethers.js" percent="80"></skill-percent>
+        <skill-percent name="Nuxt" percent="65"></skill-percent>
       </div>
       <div class="w-1/2 px-5 space-y-10 md:w-full">
+        <skill-percent name="HTML" percent="95"></skill-percent>
         <skill-percent name="CSS" percent="90"></skill-percent>
         <skill-percent name="Tailwindcss" percent="80"></skill-percent>
-        <skill-percent name="SCSS" percent="80"></skill-percent>
+
         <skill-percent name="Git" percent="80"></skill-percent>
       </div>
     </div>
@@ -72,15 +81,7 @@ import skillPercent from "./skillPercent.vue";
         target="_blank"
       >
         <span
-          class="
-            bg-[#fca61f]
-            px-5
-            py-3
-            rounded-xl
-            font-bold
-            cursor-pointer
-            hover:bg-[#f19602]
-          "
+          class="bg-[#fca61f] px-5 py-3 rounded-xl font-bold cursor-pointer hover:bg-[#f19602]"
           style="box-shadow: 0 0 51px rgb(250 137 54 / 74%)"
           >See My Works</span
         >
