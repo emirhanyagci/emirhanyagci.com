@@ -12,33 +12,10 @@ function changeSection(section: string) {
 
 <template>
   <div
-    class="
-      animate__backInLeft
-      text-white
-      flex 
-      flex-col
-      justify-center
-      items-center
-      w-[250px]
-     pl-10
-      md:items-center md:py-0 md:w-full md:justify-center md:my-7
-      
-      md:pl-0
-    "
+    class="animate__backInLeft text-white flex flex-col justify-center items-center w-[250px] pl-10 md:items-center md:py-0 md:w-full md:justify-center md:my-7 md:pl-0"
   >
     <div
-      class="
-        selectContainer
-        bg-[#1D1933]
-        px-3
-        py-3
-        rounded-xl
-        z-[10]
-        md:py-5 
-        md:px-4
-        md:flex
-        2sm:flex-col
-      "
+      class="selectContainer bg-[#1D1933] px-3 py-3 rounded-xl z-[10] md:py-5 md:px-4 md:flex 2sm:flex-col"
     >
       <div class="space-y-4 2sm:flex md:flex md:space-y-0 md:space-x-5">
         <selectAreaBtn
@@ -57,12 +34,6 @@ function changeSection(section: string) {
           @click="changeSection('blog')"
           text="Blog"
           url="https://cdn.discordapp.com/attachments/529558352213311507/998934024833740871/writing.png"
-        ></selectAreaBtn>
-
-        <selectAreaBtn
-          @click="changeSection('contact')"
-          text="Contact"
-          url="https://cdn.discordapp.com/attachments/529558352213311507/998934025127338054/at.png"
         ></selectAreaBtn>
       </div>
     </div>

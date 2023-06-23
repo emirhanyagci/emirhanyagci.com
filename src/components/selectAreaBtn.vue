@@ -1,18 +1,15 @@
 <script setup lang="ts">
-import { defineProps,ref } from "vue";
-const props:any =defineProps(["url","text",])
-
+import { defineProps, ref } from "vue";
+const props: any = defineProps(["url", "text"]);
 </script>
 
 <template>
-     <div
-          class="flex items-center cursor-pointer md:flex-col md:space-y-2"
-        >
-          <button :title="text" class="sectionBtn">
-            <img :src="url" alt="" class="w-[17px] h-[17px]" />
-          </button>
-          <span class="hiddenText w-full text-center">{{text}}</span>
-        </div>
+  <div class="flex items-center cursor-pointer md:flex-col md:space-y-2">
+    <button :title="text" class="sectionBtn">
+      <img :src="url" alt="" class="w-[17px] h-[17px]" />
+    </button>
+    <span class="hiddenText w-full text-center">{{ text }}</span>
+  </div>
 </template>
 
 <style scoped>
@@ -28,6 +25,6 @@ const props:any =defineProps(["url","text",])
   border-radius: 9px;
   border: 1px solid #2a2547;
 
-  @apply min-w-[50px] min-h-[50px] transition-all duration-300 flex justify-center items-center relative cursor-pointer hover:bg-[#131129] ;
+  @apply min-w-[50px] min-h-[50px] transition-all duration-300 flex justify-center items-center relative cursor-pointer hover:bg-[#131129];
 }
 </style>
