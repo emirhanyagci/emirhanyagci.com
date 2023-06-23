@@ -29,4 +29,4 @@ Render Tailwind:
 npm/yarn run tailwind
 ```
 
-[GO PAGE](emirhanyagci.com)
+[GO PAGE](https://emirhanyagci.com/)
