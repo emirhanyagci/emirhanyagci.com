@@ -17,7 +17,7 @@ const props: any = defineProps(["url", "text"]);
   @apply inline-block opacity-50 max-w-0 whitespace-nowrap transition-all duration-300 overflow-hidden h-full border-[#fca61f] md:max-w-sm md:opacity-100  md:!border-l-0 md:!ml-0 md:border-t-2  md:pt-2 md:!pl-0;
 }
 .selectContainer:hover .hiddenText {
-  @apply max-w-sm opacity-100 ml-3  border-l-2 border-[#fca61f] pl-2;
+  @apply max-w-sm opacity-100 ml-3  border-l-[1px] border-[#fca61f] pl-2;
 }
 .sectionBtn {
   background: linear-gradient(rgb(41, 38, 73) 0%, rgba(19, 17, 41, 0) 100%);
