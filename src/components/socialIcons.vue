@@ -10,7 +10,7 @@ import { ref } from "vue";
       class="justify-center space-y-3 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-3 md:flex"
     >
       <a
-        href="https://github.com/emirhan-yagci?tab=repositories"
+        href="https://github.com/emirhanyagci?tab=repositories"
         class="flex items-center w-full"
         target="_blank "
       >
