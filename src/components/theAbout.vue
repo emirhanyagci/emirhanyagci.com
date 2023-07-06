@@ -15,8 +15,9 @@ console.log(1);
     >
     <span class="w-[80%] mb-10 text-lg border-l-2 border-[#fca61f] pl-4"
       >I’m curious to new technologies and a disciplined and passionate software
-      devoloper who enjoys solving problems and strives with algorithms , I've
-      been developing myself in Front-end and web3 since 2019.</span
+      devoloper who enjoys solving problems and crafting user interfaces using
+      modern web technologies.Devoloping myself in the field of Front-end and
+      web3 since 2019.</span
     >
     <div class="">
       <a
