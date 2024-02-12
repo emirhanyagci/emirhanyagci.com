@@ -77,7 +77,7 @@ import skillPercent from "./skillPercent.vue";
     </div>
     <div class="text-center mt-5 mb-7 2xl:mb-3">
       <a
-        href="https://github.com/emirhan-yagci?tab=repositories"
+        href="https://github.com/emirhanyagci?tab=repositories"
         target="_blank"
       >
         <span
